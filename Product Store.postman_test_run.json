@@ -1,0 +1,839 @@
+{
+	"id": "b9b2410f-7f37-4450-b3e2-140604af552e",
+	"name": "Product Store",
+	"timestamp": "2026-05-19T00:32:42.312Z",
+	"collection_id": "6160958-24751886-bd9c-48f5-af1f-531a1c50ffb6",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 260,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-05-19T00:32:12.527Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "757e2391-4552-4f54-8c63-1c969e8943f4",
+			"name": "PC-1-2 # Registro de  Usuario existente en la Aplicación",
+			"url": "https://api.demoblaze.com/signup?username=PruebaRoman&password=UHJ1ZWJhUm9tYW5QV0Q=",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar si el estado de la respuesta es 200": true,
+				"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+			},
+			"testPassFailCounts": {
+				"Comprobar si el estado de la respuesta es 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209,
+				159,
+				167,
+				165,
+				186,
+				181,
+				156,
+				174,
+				159,
+				157,
+				156,
+				153,
+				161,
+				163,
+				163,
+				156,
+				162,
+				161,
+				153,
+				162
+			],
+			"allTests": [
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el mensaje de respuesta contiene 'This user already exist.'": true
+				}
+			]
+		},
+		{
+			"id": "c49c70df-3603-474f-94c6-c5983a8264b2",
+			"name": "PC-2 # Identificación satisfactoria del usuario en la Aplicación",
+			"url": "https://api.demoblaze.com//login",
+			"time": 192,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar si el estado de la respuesta es 200": true
+			},
+			"testPassFailCounts": {
+				"Comprobar si el estado de la respuesta es 200": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				236,
+				183,
+				212,
+				182,
+				173,
+				209,
+				203,
+				186,
+				193,
+				198,
+				203,
+				187,
+				198,
+				208,
+				258,
+				200,
+				255,
+				192,
+				170,
+				192
+			],
+			"allTests": [
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true
+				}
+			]
+		},
+		{
+			"id": "21e56a29-d602-43cb-adf2-0913b9808689",
+			"name": "PC-3 # Visualización de todos los monitores disponibles en la web",
+			"url": "https://api.demoblaze.com/bycat",
+			"time": 161,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar si el estado de la respuesta es 200": true,
+				"Comprobar que el numero de monitores disponibles es 2": true,
+				"Comprobando el contenido de la respuesta": true
+			},
+			"testPassFailCounts": {
+				"Comprobar si el estado de la respuesta es 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Comprobar que el numero de monitores disponibles es 2": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Comprobando el contenido de la respuesta": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				165,
+				185,
+				211,
+				173,
+				174,
+				172,
+				194,
+				187,
+				161,
+				177,
+				179,
+				180,
+				171,
+				169,
+				171,
+				175,
+				158,
+				160,
+				185,
+				161
+			],
+			"allTests": [
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de monitores disponibles es 2": true,
+					"Comprobando el contenido de la respuesta": true
+				}
+			]
+		},
+		{
+			"id": "b967f8ff-8b45-4795-935b-5549cd1c8c99",
+			"name": "PC-4 # Visualización de todos los items disponibles en la web",
+			"url": "https://api.demoblaze.com/entries",
+			"time": 168,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Comprobar si el estado de la respuesta es 200": true,
+				"Comprobar que el numero de productos disponibles es 9": true,
+				"Comprobando el contenido de la respuesta": true
+			},
+			"testPassFailCounts": {
+				"Comprobar si el estado de la respuesta es 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Comprobar que el numero de productos disponibles es 9": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Comprobando el contenido de la respuesta": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				186,
+				187,
+				175,
+				177,
+				179,
+				344,
+				176,
+				179,
+				182,
+				182,
+				180,
+				173,
+				179,
+				183,
+				189,
+				168,
+				160,
+				164,
+				171,
+				168
+			],
+			"allTests": [
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				},
+				{
+					"Comprobar si el estado de la respuesta es 200": true,
+					"Comprobar que el numero de productos disponibles es 9": true,
+					"Comprobando el contenido de la respuesta": true
+				}
+			]
+		},
+		{
+			"id": "949519dc-60b8-4514-b8c5-c210c0b94f3c",
+			"name": "https://jsonplaceholder.typicode.com/posts/1",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código 200": true,
+				"El título fue actualizado": true
+			},
+			"testPassFailCounts": {
+				"Código 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"El título fue actualizado": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				369,
+				119,
+				118,
+				119,
+				121,
+				122,
+				119,
+				120,
+				119,
+				119,
+				120,
+				119,
+				117,
+				117,
+				120,
+				118,
+				120,
+				118,
+				118,
+				118
+			],
+			"allTests": [
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				},
+				{
+					"Código 200": true,
+					"El título fue actualizado": true
+				}
+			]
+		},
+		{
+			"id": "ead54023-1032-43e1-b321-a79b184328cd",
+			"name": "https://jsonplaceholder.typicode.com/posts/1",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 134,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Código 200": true,
+				"Respuesta vacía": true
+			},
+			"testPassFailCounts": {
+				"Código 200": {
+					"pass": 20,
+					"fail": 0
+				},
+				"Respuesta vacía": {
+					"pass": 20,
+					"fail": 0
+				}
+			},
+			"times": [
+				137,
+				134,
+				135,
+				134,
+				135,
+				134,
+				135,
+				136,
+				135,
+				134,
+				134,
+				138,
+				135,
+				134,
+				135,
+				134,
+				135,
+				134,
+				139,
+				134
+			],
+			"allTests": [
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				},
+				{
+					"Código 200": true,
+					"Respuesta vacía": true
+				}
+			]
+		}
+	],
+	"count": 20,
+	"totalTime": 19882,
+	"collection": {
+		"requests": [
+			{
+				"id": "757e2391-4552-4f54-8c63-1c969e8943f4",
+				"method": "POST"
+			},
+			{
+				"id": "c49c70df-3603-474f-94c6-c5983a8264b2",
+				"method": "POST"
+			},
+			{
+				"id": "21e56a29-d602-43cb-adf2-0913b9808689",
+				"method": "POST"
+			},
+			{
+				"id": "b967f8ff-8b45-4795-935b-5549cd1c8c99",
+				"method": "GET"
+			},
+			{
+				"id": "949519dc-60b8-4514-b8c5-c210c0b94f3c",
+				"method": "PUT"
+			},
+			{
+				"id": "ead54023-1032-43e1-b321-a79b184328cd",
+				"method": "DELETE"
+			}
+		]
+	}
+}
