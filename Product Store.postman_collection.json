@@ -1,0 +1,366 @@
+{
+  "info": {
+    "_postman_id": "24751886-bd9c-48f5-af1f-531a1c50ffb6",
+    "name": "Product Store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "6160958"
+  },
+  "item": [
+    {
+      "name": "PC-1-2 # Registro de  Usuario existente en la Aplicación",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Comprobar si el estado de la respuesta es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comprobar que el mensaje de respuesta contiene 'This user already exist.'\", function () {\r",
+              "    pm.expect(jsonData.errorMessage).contains(\"This user already exist.\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"PruebaRoman\",\r\n  \"password\": \"UHJ1ZWJhUm9tYW5QV0Q=\"  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.demoblaze.com/signup?username=PruebaRoman&password=UHJ1ZWJhUm9tYW5QV0Q=",
+          "protocol": "https",
+          "host": [
+            "api",
+            "demoblaze",
+            "com"
+          ],
+          "path": [
+            "signup"
+          ],
+          "query": [
+            {
+              "key": "username",
+              "value": "PruebaRoman"
+            },
+            {
+              "key": "password",
+              "value": "UHJ1ZWJhUm9tYW5QV0Q="
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PC-2 # Identificación satisfactoria del usuario en la Aplicación",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Comprobar si el estado de la respuesta es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"username\": \"PruebaRoman3\",\r\n  \"password\": \"UHJ1ZWJhUm9tYW4=\"  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.demoblaze.com//login",
+          "protocol": "https",
+          "host": [
+            "api",
+            "demoblaze",
+            "com"
+          ],
+          "path": [
+            "",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PC-3 # Visualización de todos los monitores disponibles en la web",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Comprobar si el estado de la respuesta es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comprobar que el numero de monitores disponibles es 2\", function () {\r",
+              "    pm.expect(2).to.eql(jsonData.Items.length);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comprobando el contenido de la respuesta\", function () {\r",
+              "     for(var i=0 ; i< jsonData.Items.length ; i++){\r",
+              "        var item = jsonData.Items[i];\r",
+              "\r",
+              "        pm.expect(\"monitor\").equals(jsonData.Items[i].cat);\r",
+              "        \r",
+              "        pm.expect(item.desc).is.not.empty; \r",
+              "        pm.expect(item.desc).length.greaterThan(20);\r",
+              "        \r",
+              "        pm.expect(item.img).contains(\"/\");\r",
+              "        pm.expect(item.img).contains(\".jpg\");\r",
+              "                 \r",
+              "        pm.expect(item.price).greaterThan(200);\r",
+              "        \r",
+              "        pm.expect(item.title).is.not.empty;\r",
+              "     }\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cat\": \"monitor\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.demoblaze.com/bycat",
+          "protocol": "https",
+          "host": [
+            "api",
+            "demoblaze",
+            "com"
+          ],
+          "path": [
+            "bycat"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PC-4 # Visualización de todos los items disponibles en la web",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "\r",
+              "pm.test(\"Comprobar si el estado de la respuesta es 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comprobar que el numero de productos disponibles es 9\", function () {\r",
+              "    pm.expect(9).to.eql(jsonData.Items.length);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Comprobando el contenido de la respuesta\", function () {\r",
+              "      categories = [\r",
+              "        \"phone\",\r",
+              "        \"notebook\"\r",
+              "    ]\r",
+              "     \r",
+              "     for(var i=0 ; i< jsonData.Items.length ; i++){\r",
+              "        var item = jsonData.Items[i];\r",
+              "        \r",
+              "        pm.expect(item.desc).is.not.empty; \r",
+              "        pm.expect(item.desc).length.greaterThan(20);\r",
+              "\r",
+              "        pm.expect(item.id).is.equals(i+1);  \r",
+              "        \r",
+              "        pm.expect(item.img).contains(\"/\");\r",
+              "        pm.expect(item.img).contains(\".jpg\");\r",
+              "                 \r",
+              "        pm.expect(item.price).greaterThan(300);\r",
+              "        \r",
+              "        pm.expect(item.title).is.not.empty;\r",
+              "     }\r",
+              "});\r",
+              "\r",
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.demoblaze.com/entries",
+          "protocol": "https",
+          "host": [
+            "api",
+            "demoblaze",
+            "com"
+          ],
+          "path": [
+            "entries"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT – Actualización de un recurso",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Código 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"El título fue actualizado\", function () {\r",
+              "    var jsonData = pm.response.json();\r",
+              "    pm.expect(jsonData.title).to.eql(\"Producto actualizado\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Producto actualizado\",\r\n  \"body\": \"Nuevo contenido\",\r\n  \"userId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/1",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE – Eliminación de un recurso",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Código 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});\r",
+              "\r",
+              "pm.test(\"Respuesta vacía\", function () {\r",
+              "    pm.expect(pm.response.text()).to.eql(\"{}\");\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/1",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "posts",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "urlWebProductStore ",
+      "value": "https://api.demoblaze.com",
+      "type": "string"
+    }
+  ]
+}
